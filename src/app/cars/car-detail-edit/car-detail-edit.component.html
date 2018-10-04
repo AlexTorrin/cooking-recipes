@@ -4,7 +4,7 @@
     <ActionItem ios.position="left" android.position="left" (tap)="onCancelButtonTap()">
         <Label text="Cancel" class="action-item"></Label>
     </ActionItem>
-    <Label class="action-bar-title" text="Edit Car Details" horizontalAlignment="center"></Label>
+    <Label class="action-bar-title" text="Редактировать рецепт" horizontalAlignment="center"></Label>
     <ActionItem ios.position="right" android.position="right">
         <Label text="Done" class="action-item" verticalAlignment="center" (tap)="onDoneButtonTap()" 
             [isEnabled]="makeModel.valid && imageModel.valid"
@@ -16,7 +16,7 @@
     <ScrollView>
         <StackLayout class="car-list">
 
-            <Label text="CAR MAKE" class="car-list-odd"></Label>
+            <Label text="Название" class="car-list-odd"></Label>
             <TextField #makeModel="ngModel" hint="Car make field is required" [(ngModel)]="car.name" class="car-list-even" required></TextField>
             
             <GridLayout rows="*, 55, *" columns="*, auto" class="car-list-odd">
